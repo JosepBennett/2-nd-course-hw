@@ -1,0 +1,122 @@
+
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Делаем блок приветствия*/
+
+.top {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 90%, #000915 100%), url(images/topback.jpg), lightgray 50%;
+    height: 1024px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+    padding-top: 217px;
+    padding-bottom: 32px;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px;
+    max-width: 788px;
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        max-width: 481px;
+        margin-bottom: 44px;
+        font-family: "Monsterat";
+
+        &_high {
+            font-weight: 700;
+        }
+    }
+    &__button {
+        width: 234px;
+        height: 48px;
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 30px;
+        background: rgba(156, 3, 50, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: rgba(235, 68, 63, 1)
+        }
+    }
+}
+
+
+/*Делаем блок с играми*/
+
+.games {
+    height: 556px;
+    background-image: url(images/gamesback.jpg);
+
+    &__box {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+    }
+
+    &__item {
+        grid-column: span 4;
+        border-radius: 16px;
+        height: 300px;
+        &:hover {
+            border-radius: 16px;
+            border: 3px solid #44D2FF;
+        }
+
+        &_1 {
+            background-image: url(images/game1.png);
+        }
+        &_2 {
+            background-image: url(images/game2.png);
+        }
+        &_3 {
+            background-image: url(images/game3.png);
+        }  
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 133.333% */
+        padding-left: 32px;
+        padding-top: 236px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
